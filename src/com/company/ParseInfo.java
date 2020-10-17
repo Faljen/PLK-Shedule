@@ -11,15 +11,13 @@ import java.util.regex.Pattern;
 
 public class ParseInfo {
 
-    Team teams = new Team();
-    Match matches = new Match();
+    Team teams;
+    Match matches;
 
     public ParseInfo(Team teams, Match matches) throws IOException {
 
         this.teams = teams;
         this.matches = matches;
-
-        // PARSING //
 
         BufferedReader in = new BufferedReader(new InputStreamReader((new URL("https://plk.pl/terminarz-i-wyniki.html").openStream())));
 
@@ -55,14 +53,6 @@ public class ParseInfo {
                         matches.guestPoints.set(matchCount.intValue() - 1, Integer.parseInt(hostResultGuestResult[1]));
                     }
                 }
-
         );
-
-//        System.out.println(teams.getName().get(120)[0].trim() + "-" + teams.getName().get(120)[1].trim());
-//        System.out.println(matches.getDate().get(120));
-//        System.out.println(matches.getHostPoints().get(120) + ":" + matches.getGuestPoints().get(120));
-
-
     }
-
 }

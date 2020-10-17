@@ -17,6 +17,7 @@ public class Run {
         Scanner input = new Scanner(System.in);
 
         /***************************************************/
+
         System.out.println("\nWybierz drużynę:");
         System.out.println("-------------------------\n");
         for (int i = 0; i <= 7; i++) {
@@ -26,7 +27,7 @@ public class Run {
                 count++;
             }
         }
-        System.out.print("\nWybieram drużynę nr - ");
+        System.out.print("\nWybieram drużynę nr: ");
 
         try {
             selection = input.nextInt();
@@ -98,7 +99,5 @@ public class Run {
         } catch (InputMismatchException e) {
             System.out.println("\nPodaj LICZBĘ z zakresu 1-16");
         }
-
     }
-
 }
