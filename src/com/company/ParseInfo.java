@@ -58,9 +58,9 @@ public class ParseInfo {
 
         );
 
-        System.out.println(teams.getName().get(75)[0].trim() + "-" + teams.getName().get(5)[1].trim());
-        System.out.println(matches.getDate().get(75));
-        System.out.println(matches.getHostPoints().get(75) + ":" + matches.getGuestPoints().get(75));
+//        System.out.println(teams.getName().get(120)[0].trim() + "-" + teams.getName().get(120)[1].trim());
+//        System.out.println(matches.getDate().get(120));
+//        System.out.println(matches.getHostPoints().get(120) + ":" + matches.getGuestPoints().get(120));
 
 
     }
